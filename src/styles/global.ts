@@ -47,6 +47,7 @@ export const GlobalStyles = createGlobalStyle`
     --px-16: 1rem;
     --px-20: 1.25rem;
     --px-40: 2.5rem;
+    --px-48: 3rem;
     --px-64: 4rem;
     --px-80: 5rem;
   }
