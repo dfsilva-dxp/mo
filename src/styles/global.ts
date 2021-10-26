@@ -25,6 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     --red-400: #E83F5B;
     --red-500: #e5001b;
 
+    --yellow-400: #F2D129;
     --yellow-500: #FFC727;
     
     --purple-500: #8257e5;
@@ -39,6 +40,8 @@ export const GlobalStyles = createGlobalStyle`
     --ft-24: 1.5rem;
     --ft-36: 2.25rem;
     --ft-48: 3rem;
+    --ft-54: 3.375rem;
+
 
     /* BOX-SIZE */
     --px-4: 0.25rem;
@@ -47,6 +50,8 @@ export const GlobalStyles = createGlobalStyle`
     --px-16: 1rem;
     --px-20: 1.25rem;
     --px-40: 2.5rem;
+    --px-48: 3rem;
+    --px-64: 4rem;
     --px-80: 5rem;
   }
 
@@ -116,7 +121,7 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 700;
   }
 
-  p {
+  p, a {
     font-family: "Roboto Mono", sans-serif;
     font-size: var(--ft-15);
     font-weight: 500;
@@ -130,7 +135,43 @@ export const GlobalStyles = createGlobalStyle`
     opacity: 0.6;
     cursor: not-allowed;
   }
+
+  /* CLASSES GERAIS */
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
   
+    @media (min-width: 576px) {
+      max-width: 540px;
+    }
+    @media (min-width: 768px) {
+      max-width: 720px;
+    }
+    @media (min-width: 992px) {
+      max-width: 960px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 1140px;
+    }
+    @media (min-width: 1920px) {
+      max-width: 1640px;
+    }
+  }
+  
+  .float-left {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: floatLeft 0.3s forwards;
+  }
+
+  @keyframes floatLeft {
+    to {
+      opacity: 1;
+      transform: initial;
+    }
+  }
+
   /* .Toastify__toast-theme--colored.Toastify__toast--success {
     background: var(--green-500) !important;
     color: var(--gray-800) !important;
