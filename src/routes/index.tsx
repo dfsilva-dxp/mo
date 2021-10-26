@@ -1,16 +1,15 @@
 import { Route, Switch } from "react-router-dom";
 
-import { Layout } from "../components/Layout";
 import { Login } from "../pages/Login";
 import { Dashboard } from "../pages/Dashboard";
+import { PrivateRoute } from "./private";
 
 export const Routes = () => {
   return (
     <Switch>
+      <PrivateRoute exact path="/dashboard" component={Dashboard} />
       <Route path="/" component={Login} />
-      <Layout>
-        <Route exact path="/dashboard" component={Dashboard} />
-      </Layout>
+      <Route path="*" component={() => <h1>Not Found</h1>} />
     </Switch>
   );
 };
