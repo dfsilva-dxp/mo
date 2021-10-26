@@ -15,11 +15,6 @@ export const Wrapper = styled.section`
   }
 `;
 
-export const Header = styled.header`
-  border: 1px solid #ff0;
-  grid-area: H;
-`;
-
 export const Sidebar = styled.aside`
   border: 1px solid #fff;
   height: 95rem;
