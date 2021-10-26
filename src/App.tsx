@@ -1,12 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
-import { Login } from "./pages/Login";
+import { Dashboard } from "./pages/Dashboard";
+
 import { GlobalStyles } from "./styles/global";
 
 function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Login />
+      <Dashboard />
     </BrowserRouter>
   );
 }
