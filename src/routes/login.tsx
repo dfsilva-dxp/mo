@@ -9,9 +9,9 @@ export const LoginRoutes = () => {
 
   return (
     <Switch>
-      <Route exact path={path} component={SignInForm} />
-      <Route exact path="/signup" component={SignUpForm} />
-      <Route exact path="/forgot" component={ForgotForm} />
+      <Route exact path={`${path}`} component={SignInForm} />
+      <Route exact path={`/signup`} component={SignUpForm} />
+      <Route exact path={`/forgot`} component={ForgotForm} />
     </Switch>
   );
 };
