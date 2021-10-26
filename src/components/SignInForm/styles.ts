@@ -51,6 +51,4 @@ export const Form = styled.form`
 export const Paragraph = styled.p`
   color: var(--gray-700);
   text-align: center;
-  border-top: 1px solid var(--gray-750);
-  padding-top: var(--px-8);
 `;

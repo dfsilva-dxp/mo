@@ -1,12 +1,19 @@
 import { TiLockClosedOutline, TiMail } from "react-icons/ti";
 
+import Head from "../HeadPage";
 import { Input } from "../Input";
 import { Button } from "../Button";
 
 import * as S from "./styles";
+import { Link } from "react-router-dom";
 
 export const SignInForm = () => (
   <S.Wrapper className="float-left">
+    <Head
+      title="Login | Mo."
+      description="Faça seu login
+na plataforma, acompanhe seus gastos e controle suas finanças."
+    />
     <S.WelcomeDisplay>
       <p>Bem-vindo (a) ao MO.</p>
       <h1>
@@ -31,13 +38,13 @@ export const SignInForm = () => (
         placeholder="Sua senha"
         icon={<TiLockClosedOutline />}
       />
-      <a href="/login/esqueci-a-senha">Esqueceu a senha?</a>
+      <Link to="/forgot">Esqueceu a senha?</Link>
       <Button type="submit" btnStyle="primary">
         Entrar
       </Button>
       <S.Paragraph>
         Não tem conta?
-        <a href="/login/cadastrar">Cadastre-se</a>
+        <Link to="/signup">Cadastre-se</Link>
       </S.Paragraph>
     </S.Form>
   </S.Wrapper>
