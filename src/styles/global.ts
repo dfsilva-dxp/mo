@@ -37,6 +37,7 @@ export const GlobalStyles = createGlobalStyle`
     --ft-14: 0.875rem;
     --ft-15: 0.9375rem;
     --ft-16: 1rem;
+    --ft-20: 1.25rem;
     --ft-24: 1.5rem;
     --ft-36: 2.25rem;
     --ft-48: 3rem;
