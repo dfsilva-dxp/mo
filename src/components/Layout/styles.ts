@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-  border: 1px solid #f00;
   height: 100vh;
 
   .container {
@@ -13,12 +12,6 @@ export const Wrapper = styled.section`
       "AS AB CNT";
     gap: 1rem;
   }
-`;
-
-export const Sidebar = styled.aside`
-  border: 1px solid #fff;
-  height: 95rem;
-  grid-area: AS;
 `;
 
 export const About = styled.div`
