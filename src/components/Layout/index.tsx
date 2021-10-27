@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 
 import { Header } from "../Header";
+import { Sidebar } from "../Sidebar";
 
 import * as S from "./styles";
 
@@ -13,7 +14,7 @@ export const Layout = ({ children }: LayoutProps) => {
     <S.Wrapper>
       <div className="container">
         <Header />
-        <S.Sidebar>Aside</S.Sidebar>
+        <Sidebar />
         <S.About>About</S.About>
         <S.Content>{children}</S.Content>
       </div>
