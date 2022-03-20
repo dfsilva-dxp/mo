@@ -20,6 +20,7 @@
     "test:watch": "yarn test --watch",
     "eject": "react-scripts eject",
     "lint": "eslint src --max-warnings=0",
+    "lint:css": "stylelint **/styles.{ts,tsx}",
     "postinstall": "husky install"
   },
   "husky": {
@@ -73,5 +74,8 @@
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.0",
     "ts-node": "^10.7.0"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }
