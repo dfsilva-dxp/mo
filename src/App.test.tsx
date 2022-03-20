@@ -9,5 +9,7 @@ describe("<App/>", () => {
     expect(
       screen.getByRole("heading", { name: /mo app/i })
     ).toBeInTheDocument();
+
+    expect(1 + 1).toBe(2);
   });
 });
