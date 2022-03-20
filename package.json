@@ -20,7 +20,6 @@
     "test:watch": "yarn test --watch",
     "eject": "react-scripts eject",
     "lint": "eslint src --max-warnings=0",
-    "lint:css": "stylelint **/styles.{ts,tsx}",
     "postinstall": "husky install"
   },
   "husky": {
