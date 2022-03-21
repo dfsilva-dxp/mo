@@ -1,6 +1,58 @@
 import { createGlobalStyle, css } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+
+  /* quicksand-300 - latin */
+  @font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('/fonts/quicksand-v28-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+  /* quicksand-regular - latin */
+  @font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('/fonts/quicksand-v28-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  }
+
+  /* roboto-300 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('/fonts/roboto-v29-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+}
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('/fonts/roboto-v29-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('/fonts/roboto-v29-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('/fonts/roboto-v29-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+}
+
+
   * {
     margin: 0;
     padding: 0;
