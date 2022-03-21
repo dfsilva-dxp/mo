@@ -22,7 +22,8 @@
     "lint": "eslint src --max-warnings=0",
     "postinstall": "husky install",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "generate": "yarn plop --plopfile generators/plopfile.js"
   },
   "husky": {
     "hooks": {
@@ -94,6 +95,7 @@
     "jest": "^27.5.1",
     "jest-styled-components": "^7.0.8",
     "lint-staged": "^12.3.7",
+    "plop": "^3.0.5",
     "prettier": "^2.6.0",
     "ts-node": "^10.7.0",
     "webpack": "^5.70.0"
