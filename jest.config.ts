@@ -28,5 +28,6 @@ export default {
       }
     ]
   },
-  setupFilesAfterEnv: ["<rootDir>/.jest/setup.ts"]
+  setupFilesAfterEnv: ["<rootDir>/.jest/setup.ts"],
+  modulePaths: ["<rootDir>/src/"]
 };
