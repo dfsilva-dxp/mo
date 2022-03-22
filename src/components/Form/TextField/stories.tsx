@@ -8,12 +8,20 @@ export default {
   title: "Form/TextField",
   component: TextField,
   argTypes: {
-    onInput: { action: "input" }
+    onInput: { action: "input" },
+    iconPosition: {
+      options: ["left", "right"],
+      control: { type: "select" }
+    }
   },
   args: {
+    label: "E-mail",
+    labelFor: "email",
     id: "email",
-    placeholder: "john.doe@gmail.com",
-    disabled: false
+    initialValue: "",
+    placeholder: "jhon.doe@email.com",
+    disabled: false,
+    iconPosition: "left"
   },
   parameters: {
     layout: "centered"
@@ -22,41 +30,4 @@ export default {
 
 export const Basic: Story<ComponentProps<typeof TextField>> = ({
   ...props
-}) => <TextField {...props} />;
-
-export const WithoutIcon: Story<ComponentProps<typeof TextField>> = ({
-  ...props
-}) => <TextField {...props} />;
-
-WithoutIcon.argTypes = {
-  iconPosition: {
-    options: ["left", "right"],
-    control: { type: "select" }
-  }
-};
-
-WithoutIcon.args = {
-  label: "Without Icon",
-  labelFor: "withoutIcon",
-  id: "withoutIcon",
-  placeholder: "Your placeholder"
-};
-
-export const WithIcon: Story<ComponentProps<typeof TextField>> = ({
-  ...props
 }) => <TextField {...props} icon={<TiMail />} />;
-
-WithIcon.argTypes = {
-  iconPosition: {
-    options: ["left", "right"],
-    control: { type: "select" }
-  }
-};
-
-WithIcon.args = {
-  iconPosition: "left",
-  label: "With Icon",
-  labelFor: "withIcon",
-  id: "withIcon",
-  placeholder: "Your placeholder"
-};
