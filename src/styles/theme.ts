@@ -30,7 +30,7 @@ export default {
   colors: {
     primary: "#FFC727",
     background: "#181B23",
-    thumbnail: "#1F2029",
+    panel: "#1F2029",
     green: "#3CD3C1",
     red: "#E83F5B",
     orange: "#FF5C00",
