@@ -12,6 +12,9 @@ export default {
     iconPosition: {
       options: ["left", "right"],
       control: { type: "select" }
+    },
+    icon: {
+      control: { type: "" }
     }
   },
   args: {
