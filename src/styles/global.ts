@@ -16,6 +16,20 @@ const GlobalStyles = createGlobalStyle`
     src: local(''),
         url('/fonts/quicksand-v28-latin-regular.woff2') format('woff2') /* Super Modern Browsers */
   }
+  @font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('/fonts/quicksand-v28-latin-500.woff2') format('woff2') /* Super Modern Browsers */
+}
+  @font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('/fonts/quicksand-v28-latin-600.woff2') format('woff2') /* Super Modern Browsers */
+  }
 
   @font-face {
     font-family: 'Roboto';
@@ -30,13 +44,6 @@ const GlobalStyles = createGlobalStyle`
     font-weight: 400;
     src: local(''),
         url('/fonts/roboto-v29-latin-regular.woff2') format('woff2') /* Super Modern Browsers */
-  }
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    src: local(''),
-        url('/fonts/roboto-v29-latin-500.woff2') format('woff2') /* Super Modern Browsers */
   }
   @font-face {
     font-family: 'Roboto';
@@ -81,6 +88,7 @@ const GlobalStyles = createGlobalStyle`
     textarea,
     button {
       color: ${theme.colors.gray500};
+      font-family: ${theme.font.family.default};
     }
 
     h1,
