@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner Component should render currectly banner 1`] = `
+.c0 {
+  width: 100%;
+  max-width: 87rem;
+  height: 24rem;
+  background: #1F2029;
+  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  place-items: center;
+  border-radius: 0.4rem;
+}
+
+.c1 {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.c2 {
+  font-size: 4.8rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.c3 {
+  color: #797D9A;
+  line-height: 1;
+}
+
+<div
+  class="c0"
+>
+  <div
+    class="c1"
+  >
+    <h4
+      class=""
+    >
+      title
+    </h4>
+    <p
+      class="c2"
+    >
+      description
+    </p>
+    <p
+      class="c3"
+    >
+      short description
+    </p>
+  </div>
+  <img
+    alt="Mulher segurando um cofrinho em formato de porco, pensando no seus gastos."
+    aria-label="finance"
+    class=""
+    loading="lazy"
+    role="img"
+    src="./img/personal-finance.svg"
+    title="Mulher segurando um cofrinho em formato de porco, pensando no seus gastos."
+  />
+</div>
+`;
