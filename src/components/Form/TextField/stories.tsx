@@ -1,5 +1,4 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
-import { ComponentProps } from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { TiMail } from "react-icons/ti";
 
 import TextField from ".";
@@ -29,8 +28,8 @@ export default {
   parameters: {
     layout: "centered"
   }
-} as Meta;
+} as ComponentMeta<typeof TextField>;
 
-export const Basic: Story<ComponentProps<typeof TextField>> = ({
-  ...props
-}) => <TextField {...props} icon={<TiMail />} />;
+export const Basic: ComponentStory<typeof TextField> = ({ ...props }) => (
+  <TextField {...props} icon={<TiMail />} />
+);

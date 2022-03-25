@@ -1,5 +1,4 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
-import { ComponentProps } from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { TiShoppingCart } from "react-icons/ti";
 
 import Button from ".";
@@ -20,20 +19,30 @@ export default {
       control: { type: "" }
     }
   },
+  parameters: {
+    layout: "centered"
+  },
   args: {
     size: "md",
     color: "primary",
     fullSize: false
-  }
-} as Meta;
+  },
+  decorators: [
+    (Story) => (
+      <div style={{ width: "37rem" }}>
+        <Story />
+      </div>
+    )
+  ]
+} as ComponentMeta<typeof Button>;
 
-export const Basic: Story<ComponentProps<typeof Button>> = ({ ...props }) => (
+export const Basic: ComponentStory<typeof Button> = ({ ...props }) => (
   <Button {...props}>Enter</Button>
 );
 
-export const WithIcon: Story<ComponentProps<typeof Button>> = ({
-  ...props
-}) => <Button {...props}>Buy now</Button>;
+export const WithIcon: ComponentStory<typeof Button> = ({ ...props }) => (
+  <Button {...props}>Buy now</Button>
+);
 
 WithIcon.args = {
   icon: <TiShoppingCart />
