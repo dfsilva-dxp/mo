@@ -1,5 +1,4 @@
-import { Story, Meta } from "@storybook/react/types-6-0";
-import { ComponentProps } from "react";
+import { ComponentStory, ComponentMeta } from "@storybook/react";
 import { TiPlus } from "react-icons/ti";
 
 import NewTransactionButton from ".";
@@ -15,13 +14,16 @@ export default {
     label: "Gerar nova transação",
     description: "Movimentações de entradas e saídas",
     icon: <TiPlus />
-  }
-} as Meta;
+  },
+  decorators: [
+    (Story) => (
+      <div style={{ width: "37rem" }}>
+        <Story />
+      </div>
+    )
+  ]
+} as ComponentMeta<typeof NewTransactionButton>;
 
-export const Basic: Story<ComponentProps<typeof NewTransactionButton>> = ({
+export const Basic: ComponentStory<typeof NewTransactionButton> = ({
   ...props
-}) => (
-  <div style={{ width: "37rem" }}>
-    <NewTransactionButton {...props} />
-  </div>
-);
+}) => <NewTransactionButton {...props} />;
