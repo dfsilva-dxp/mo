@@ -22,7 +22,7 @@ describe("ButtonNewTransaction Component", () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 
-  it("should render a description when is passed in", () => {
+  it("should render a description when is passed", () => {
     renderWithTheme(
       <NewTransactionButton
         label="Gerar nova transação"
@@ -46,5 +46,23 @@ describe("ButtonNewTransaction Component", () => {
     );
 
     expect(screen.getByTestId("icon")).toBeInTheDocument();
+  });
+
+  it("should render the button with currect background", () => {
+    renderWithTheme(
+      <NewTransactionButton
+        label="Gerar nova transação"
+        icon={<TiPlus data-testid="icon" />}
+        href="/"
+      />
+    );
+
+    expect(
+      screen.getByRole("link", { name: /gerar nova transação/i })
+    ).toHaveStyle({
+      background: "#1F2029",
+      width: "100%",
+      height: "10rem"
+    });
   });
 });
