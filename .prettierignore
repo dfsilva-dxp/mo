@@ -1,8 +1,0 @@
-# Ignore all .hbs files
-*.hbs
-
-node_modules
-coverage
-.jest
-.storybook
-.husky
