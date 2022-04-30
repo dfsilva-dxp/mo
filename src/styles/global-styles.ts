@@ -4,6 +4,42 @@ import { createGlobalStyle, css } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
 
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: local(''),
+        url('/fonts/roboto-v29-latin-300.woff2') format('woff2')
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local(''),
+        url('/fonts/roboto-v29-latin-400.woff2') format('woff2')
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local(''),
+        url('/fonts/roboto-v29-latin-700.woff2') format('woff2')
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: local(''),
+        url('/fonts/roboto-v29-latin-900.woff2') format('woff2')
+  }
+
   * {
     margin: 0;
     padding: 0;
