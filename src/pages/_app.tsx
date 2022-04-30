@@ -2,7 +2,7 @@ import { AppProps } from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 
-import { theme } from "styles";
+import { GlobalStyles, theme } from "styles";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -22,6 +22,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link rel="manifest" href="/manifest.json" />
       </Head>
+
+      <GlobalStyles />
       <Component {...pageProps} />
     </ThemeProvider>
   );
